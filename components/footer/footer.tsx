@@ -6,7 +6,7 @@ import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from 'react-icons/ai'
 export const Footer = () => {
   return (
     <>
-      <nav className={`flex flex-wrap items-center p-3 ${styles.footer}`}>
+      <nav className={`flex flex-wrap items-center p-3 px-20 ${styles.footer}`}>
         <Link href="/">
           <a className="mr-4 inline-flex items-center p-2 ">
             <span className="text-xl font-bold uppercase tracking-wide text-white">

@@ -13,6 +13,9 @@ module.exports = {
         header: "var(--header)",
         accent: "var(--accent)",
       },
+      boxShadow: {
+        'navbar': 'rgba(120, 126, 154, 0.81) 0px -6px 44px -17px',
+      }
     },
     fontWeight: {
       hairline: 100,
