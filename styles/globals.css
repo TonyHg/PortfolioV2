@@ -14,3 +14,9 @@
 
   font-family: 'Poppins', sans-serif;
 }
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+}
