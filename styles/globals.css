@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.root,
+#root,
+#docs-root {
+  --primary: #323f4b;
+  --secondary: #0679bf;
+  --accent: #718096;
+  --background: #f5f6f7;
+  --main: #0d0106;
+  --header: #2d3748;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 32px;
+}
+
+@layer components {
+  .btn-primary {
+    @apply rounded-lg bg-blue-500 py-2 px-4 font-semibold text-white shadow-md hover:bg-blue-700 focus:outline-none;
+  }
+}
