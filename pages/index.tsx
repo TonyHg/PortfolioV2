@@ -1,8 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { Footer } from '../common/components/footer/footer'
-import { Navbar } from '../common/components/navbar/navbar'
-import { MainProjects } from '../common/components/projects/main-projects'
+import { Footer } from '../components/footer/footer'
+import { Navbar } from '../components/navbar/navbar'
+import { MainProjects } from '../components/projects/main-projects'
 
 const Home: NextPage = () => {
   return (
