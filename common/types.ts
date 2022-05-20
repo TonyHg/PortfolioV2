@@ -7,7 +7,7 @@ export interface Technology {
 
 export interface Project {
   title: string
-  role: string
+  role?: string
   date: string
   description?: string
   technologies: Technology[]
@@ -16,5 +16,5 @@ export interface Project {
   imageHeight?: number
   github?: string
   url?: string
-  color: string
+  color?: string
 }
