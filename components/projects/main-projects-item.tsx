@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { Project } from '../../common/types'
+import { TechnologiesList } from './technologies-list'
 
 interface MainProjectsItemProps {
   project: Project
@@ -18,10 +19,7 @@ export const MainProjectsItem: React.FC<MainProjectsItemProps> = ({
       }`}
     >
       <div className="w-1/2">
-        <div
-          className="flex items-center justify-center align-middle"
-          style={{ transform: `scale(${project.imageSize})` }}
-        >
+        <div className="flex items-center justify-center align-middle">
           <Image
             className="m-auto"
             src={project.image}
@@ -32,13 +30,14 @@ export const MainProjectsItem: React.FC<MainProjectsItemProps> = ({
       </div>
       <div className="flex w-1/2 flex-col justify-center p-10 text-left">
         <div
-          className="mb-2 text-3xl font-semibold uppercase tracking-wide text-primary"
+          className="mb-6 text-3xl font-semibold uppercase tracking-wide text-primary"
           style={{ color: project.color }}
         >
           {project.title}
         </div>
         <div className="text-xl">{project.role}</div>
-        <div className="mb-5 font-light italic text-accent">{project.date}</div>
+        <div className="mb-2 font-light italic text-accent">{project.date}</div>
+        <TechnologiesList technologies={project.technologies} />
         <div>{project.description}</div>
         {project.github && (
           <Link href={project.github} passHref>

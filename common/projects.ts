@@ -10,6 +10,7 @@ import ocrImg from '../public/img/ocr.png'
 import rgImg from '../public/img/rg.png'
 import upImg from '../public/img/up.png'
 import timImg from '../public/img/tim.png'
+import { technologies } from './technologies'
 
 export const mainProjects: Project[] = [
   {
@@ -19,9 +20,9 @@ export const mainProjects: Project[] = [
     description:
       'TripNJoy is an app for planning group trips by connecting people with similar interests. The frontend is built using Flutter and Riverpod as State Manager, the backend in Java Spring Boot.',
     technologies: [
-      ['Flutter', Color.lightBlue],
-      ['RiverPod', Color.darkBlue],
-      ['Spring Boot', Color.darkPurple],
+      technologies.Flutter,
+      technologies.Riverpod,
+      technologies.SpringBoot,
     ],
     image: clonestagramImg,
     color: Color.saturatedBlue,
@@ -33,10 +34,10 @@ export const mainProjects: Project[] = [
     description:
       'Clonestragram is a Instagram clone made in MERN (MongoDb, Express.js, React.ts, Node,js) fullstack approach. Authentication built using JWT session token.',
     technologies: [
-      ['MongoDB', Color.lightBlue],
-      ['Express.js', Color.darkBlue],
-      ['React.ts', Color.darkPurple],
-      ['Node', Color.purple],
+      technologies.MongoDB,
+      technologies.Express,
+      technologies.React,
+      technologies.Node,
     ],
     image: clonestagramImg,
     github: 'https://github.com/TonyHg/Clonestagram',
@@ -51,10 +52,9 @@ export const mainProjects: Project[] = [
 Deep design and development to provide the best possible user experience. The IDE manages GIT and Maven projects. Essential features such as editing, compiling and running projects are availables \
 Fancier features like Custom Themes and Shortcuts. ',
     technologies: [
-      ['Kotlin', Color.lightBlue],
-      ['Compose for Desktop', Color.darkBlue],
-      ['JediTerm', Color.darkPurple],
-      ['Java', Color.purple],
+      technologies.Kotlin,
+      technologies.Compose,
+      technologies.Java,
     ],
     image: pingImg,
     imageHeight: 475,
@@ -69,8 +69,8 @@ Fancier features like Custom Themes and Shortcuts. ',
     description:
       'Epilife is a timetable Android application for EPITA students.',
     technologies: [
-      ['Android', Color.lightBlue],
-      ['Kotlin', Color.darkBlue],
+      technologies.Android,
+      technologies.Kotlin,
     ],
     image: epilifeImg,
     imageHeight: 500,
@@ -84,8 +84,7 @@ Fancier features like Custom Themes and Shortcuts. ',
     description:
       'Chess AI is a Chess engine & Chess AI implementation. Bitboard implementation using MagicBitboard. ',
     technologies: [
-      ['C++', Color.lightBlue],
-      ['AI', Color.darkBlue],
+      technologies.Cpp,
     ],
     image: chessImg,
     imageHeight: 300,
@@ -98,7 +97,7 @@ Fancier features like Custom Themes and Shortcuts. ',
     date: 'November-December 2020',
     description:
       '42sh is a posix-compliant shell interpretor done in the scope of our ING1 project at EPITA. 42sh is a 4-weeks project made in C. 42sh was developped following the SCL (Shell Command Language). ',
-    technologies: [['C', Color.lightBlue]],
+    technologies: [technologies.C],
     image: shImg,
     color: Color.darkerBlue,
   },
@@ -108,7 +107,7 @@ Fancier features like Custom Themes and Shortcuts. ',
     date: 'October-December 2019',
     description:
       'OCR stands for Optical Character Recognition. A project made in C, with the use of a basic neural network trained, allows you to recover the text in the image of a printed text.',
-    technologies: [['C', Color.lightBlue]],
+    technologies: [technologies.C],
     image: ocrImg,
     github: 'https://github.com/TonyHg/OCR-1',
     imageHeight: 400,
@@ -122,10 +121,11 @@ Fancier features like Custom Themes and Shortcuts. ',
     description:
       'Registre Général is a web application for centralizing and managing our companies. Its primary advantage is the tokenization (BlockChain) of corporate records and documents',
     technologies: [
-      ['ASP.NET MVC', Color.lightBlue],
-      ['Razor', Color.darkBlue],
-      ['Knockout.js', Color.darkBlue],
-      ['SSMS', Color.darkBlue],
+      technologies.NET,
+      technologies.CSharp,
+      technologies.Razor,
+      technologies.Knockout,
+      technologies.Ssms,
     ],
     image: rgImg,
     color: Color.lightGreen,
@@ -137,8 +137,8 @@ Fancier features like Custom Themes and Shortcuts. ',
     description:
       'Uprising is a first person shooter game, which goals is to jump from platforms to platforms to get to the top of the map, shoot the other players to make them fall. The last player remaining wins. This game aims to be simple and easy to play.',
     technologies: [
-      ['Unity', Color.lightBlue],
-      ['Figma', Color.darkBlue],
+      technologies.Unity,
+      technologies.Figma,
     ],
     image: upImg,
     github: 'https://github.com/TonyHg/Uprising',
@@ -151,8 +151,24 @@ Fancier features like Custom Themes and Shortcuts. ',
     description:
       'Time is Monet is a 2D platformer made in Python. You are playing a student late to his math lesson. Hurry up! You need to pass through the others students in order to be in time.',
     technologies: [
-      ['Python', Color.lightBlue],
-      ['Pygame', Color.darkBlue],
+      technologies.Python,
+      technologies.Pygame,
+    ],
+    image: timImg,
+    github: 'https://github.com/TonyHg/TimeIsMonet',
+    color: Color.skyBlue,
+  },
+]
+
+export const otherProjects: Project[] = [
+  {
+    title: 'TIME IS MONET',
+    role: 'Game Designer & Python Developper',
+    date: 'January-June 2019',
+    description:
+      'Time is Monet is a 2D platformer made in Python. You are playing a student late to his math lesson. Hurry up! You need to pass through the others students in order to be in time.',
+    technologies: [
+      
     ],
     image: timImg,
     github: 'https://github.com/TonyHg/TimeIsMonet',
