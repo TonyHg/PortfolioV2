@@ -5,10 +5,12 @@
 .root,
 #root,
 #docs-root {
-  --primary: #323F4B;
+  --primary: #323f4b;
   --secondary: #0679bf;
   --accent: #718096;
   --background: #f5f6f7;
   --main: #0d0106;
   --header: #2d3748;
+
+  font-family: 'Poppins', sans-serif;
 }

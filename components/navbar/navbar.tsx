@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { useState } from 'react'
-import styles from '../../styles/navbar/navbar.module.scss'
 
 export const Navbar = () => {
   const [active, setActive] = useState(false)
@@ -11,9 +10,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav
-        className={`flex flex-wrap items-center bg-background p-3 ${styles.navbar}`}
-      >
+      <nav className="flex flex-wrap items-center bg-white p-3">
         <Link href="/">
           <a className="mr-4 inline-flex items-center p-2 ">
             <span className="text-xl font-bold uppercase tracking-wide text-secondary">
