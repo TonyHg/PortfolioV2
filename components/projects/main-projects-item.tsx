@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Project } from '../../common/types'
 
 interface MainProjectsItemProps {
@@ -12,14 +13,19 @@ export const MainProjectsItem: React.FC<MainProjectsItemProps> = ({
 }) => {
   return (
     <div
-      className={`container flex ${isLeft ? 'flex-row-reverse' : 'flex-row'}`}
+      className={`container mb-28 flex ${
+        isLeft ? 'flex-row-reverse' : 'flex-row'
+      }`}
     >
       <div className="w-1/2">
-        <div>
-          <img src={project.image} />
+        <div
+          className="flex"
+          style={{ transform: `scale(${project.imageSize})` }}
+        >
+          <Image className="m-auto" src={project.image} />
         </div>
       </div>
-      <div className="w-1/2 p-10 text-left">
+      <div className="flex w-1/2 flex-col justify-center p-10 text-left">
         <div
           className="mb-2 text-3xl font-semibold uppercase tracking-wide text-primary"
           style={{ color: project.color }}

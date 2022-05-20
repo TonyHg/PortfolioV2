@@ -10,7 +10,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed flex w-full flex-wrap items-center bg-white p-3 px-20 shadow-navbar">
+      <nav className="shadow-n fixed z-50 flex w-full flex-wrap items-center bg-white p-3 px-20">
         <Link href="/">
           <a className="mr-4 inline-flex items-center p-2 ">
             <span className="text-xl font-bold uppercase tracking-wide text-secondary">

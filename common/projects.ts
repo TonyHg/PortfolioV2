@@ -1,5 +1,16 @@
 import { Color } from './colors'
 import { Project } from './types'
+
+import clonestagramImg from '../public/img/clonestagram.png'
+import pingImg from '../public/img/ping.png'
+import epilifeImg from '../public/img/epilife.png'
+import chessImg from '../public/img/chess.png'
+import shImg from '../public/img/42.png'
+import ocrImg from '../public/img/ocr.png'
+import rgImg from '../public/img/rg.png'
+import upImg from '../public/img/up.png'
+import timImg from '../public/img/tim.png'
+
 export const mainProjects: Project[] = [
   {
     title: 'TripNJoy',
@@ -12,7 +23,7 @@ export const mainProjects: Project[] = [
       ['RiverPod', Color.darkBlue],
       ['Spring Boot', Color.darkPurple],
     ],
-    image: 'clonestagram.png',
+    image: clonestagramImg,
     color: Color.saturatedBlue,
   },
   {
@@ -27,7 +38,7 @@ export const mainProjects: Project[] = [
       ['React.ts', Color.darkPurple],
       ['Node', Color.purple],
     ],
-    image: 'clonestagram.png',
+    image: clonestagramImg,
     github: 'https://github.com/TonyHg/Clonestagram',
     color: Color.blue,
   },
@@ -45,7 +56,8 @@ Fancier features like Custom Themes and Shortcuts. ',
       ['JediTerm', Color.darkPurple],
       ['Java', Color.purple],
     ],
-    image: 'clonestagram.png',
+    image: pingImg,
+    imageSize: 0.8,
     github: 'https://github.com/Croisillons/PING',
     color: Color.turquoise,
   },
@@ -59,7 +71,8 @@ Fancier features like Custom Themes and Shortcuts. ',
       ['Android', Color.lightBlue],
       ['Kotlin', Color.darkBlue],
     ],
-    image: 'clonestagram.png',
+    image: epilifeImg,
+    imageSize: 0.8,
     color: Color.vividBlue,
   },
   {
@@ -72,7 +85,7 @@ Fancier features like Custom Themes and Shortcuts. ',
       ['C++', Color.lightBlue],
       ['AI', Color.darkBlue],
     ],
-    image: 'clonestagram.png',
+    image: chessImg,
     color: Color.grey,
   },
   {
@@ -82,7 +95,7 @@ Fancier features like Custom Themes and Shortcuts. ',
     description:
       '42sh is a posix-compliant shell interpretor done in the scope of our ING1 project at EPITA. 42sh is a 4-weeks project made in C. 42sh was developped following the SCL (Shell Command Language). ',
     technologies: [['C', Color.lightBlue]],
-    image: 'clonestagram.png',
+    image: shImg,
     color: Color.darkerBlue,
   },
   {
@@ -92,7 +105,7 @@ Fancier features like Custom Themes and Shortcuts. ',
     description:
       'OCR stands for Optical Character Recognition. A project made in C, with the use of a basic neural network trained, allows you to recover the text in the image of a printed text.',
     technologies: [['C', Color.lightBlue]],
-    image: 'clonestagram.png',
+    image: ocrImg,
     github: 'https://github.com/TonyHg/OCR-1',
     color: Color.purple,
   },
@@ -108,7 +121,7 @@ Fancier features like Custom Themes and Shortcuts. ',
       ['Knockout.js', Color.darkBlue],
       ['SSMS', Color.darkBlue],
     ],
-    image: 'clonestagram.png',
+    image: rgImg,
     color: Color.lightGreen,
   },
   {
@@ -121,7 +134,7 @@ Fancier features like Custom Themes and Shortcuts. ',
       ['Unity', Color.lightBlue],
       ['Figma', Color.darkBlue],
     ],
-    image: 'clonestagram.png',
+    image: upImg,
     github: 'https://github.com/TonyHg/Uprising',
     color: Color.darkRed,
   },
@@ -135,7 +148,7 @@ Fancier features like Custom Themes and Shortcuts. ',
       ['Python', Color.lightBlue],
       ['Pygame', Color.darkBlue],
     ],
-    image: 'clonestagram.png',
+    image: timImg,
     color: Color.skyBlue,
   },
 ]
