@@ -19,10 +19,15 @@ export const MainProjectsItem: React.FC<MainProjectsItemProps> = ({
     >
       <div className="w-1/2">
         <div
-          className="flex"
+          className="flex items-center justify-center align-middle"
           style={{ transform: `scale(${project.imageSize})` }}
         >
-          <Image className="m-auto" src={project.image} />
+          <Image
+            className="m-auto"
+            src={project.image}
+            width={project.imageWidth}
+            height={project.imageHeight}
+          />
         </div>
       </div>
       <div className="flex w-1/2 flex-col justify-center p-10 text-left">

@@ -7,7 +7,8 @@ export interface Project {
   description?: string
   technologies?: [string, string][]
   image: string | StaticImageData
-  imageSize?: number
+  imageWidth?: number
+  imageHeight?: number
   github?: string
   url?: string
   color: string
