@@ -59,7 +59,7 @@ export const Navbar = () => {
                 Gallery
               </a>
             </Link>
-            <Link href="/">
+            <Link href="/resume">
               <a className="w-full items-center justify-center rounded px-3 py-2 text-secondary lg:inline-flex lg:w-auto ">
                 Resume
               </a>
