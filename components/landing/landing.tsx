@@ -23,6 +23,9 @@ export const Landing: React.FC = () => {
           <span className="text-secondary"> develop </span>
           <ReactTypingEffect
             text={['websites.', 'apps.', 'softwares.', 'games.', 'things.']}
+            eraseDelay={500}
+            eraseSpeed={100}
+            typingDelay={500}
           />
           <br />
           Welcome to my portfolio!
