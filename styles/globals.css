@@ -24,6 +24,9 @@
 
 @layer components {
   .btn-primary {
-    @apply rounded-lg bg-blue-500 py-2 px-4 font-semibold text-white shadow-md hover:bg-blue-700 focus:outline-none;
+    @apply rounded bg-blue-500 py-2 px-4 font-semibold text-white shadow-md hover:bg-blue-700 focus:outline-none;
+  }
+  .technology {
+    @apply rounded py-1.5 px-4 text-sm font-bold text-background;
   }
 }

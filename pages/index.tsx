@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { Footer } from '../components/footer/footer'
 import { Navbar } from '../components/navbar/navbar'
 import { MainProjects } from '../components/projects/main-projects'
+import { OtherProjects } from '../components/projects/other-projects'
 
 const Home: NextPage = () => {
   return (
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
       <div className="root">
         <Navbar />
         <MainProjects />
+        <OtherProjects />
         <Footer />
       </div>
     </>

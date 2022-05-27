@@ -1,5 +1,4 @@
 import { Technology } from '../../common/types'
-import style from '../../styles/projects/projects.module.scss'
 
 interface TechnologiesListProps {
   technologies: Technology[]
@@ -13,7 +12,7 @@ export const TechnologiesList: React.FC<TechnologiesListProps> = ({
       {technologies.map((technology, idx) => (
         <span
           key={`technology-${idx}`}
-          className={`${style.technology} mr-2 uppercase`}
+          className={`technology mr-2 uppercase`}
           style={{ backgroundColor: technology.color }}
         >
           {technology.title}

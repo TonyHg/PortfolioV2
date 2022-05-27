@@ -19,7 +19,7 @@ export const MainProjectsItem: React.FC<MainProjectsItemProps> = ({
       }`}
     >
       <div className="w-1/2">
-        <div className="flex items-center justify-center align-middle">
+        <div className="flex h-full items-center justify-center align-middle">
           <Image
             className="m-auto"
             src={project.image}
@@ -38,7 +38,7 @@ export const MainProjectsItem: React.FC<MainProjectsItemProps> = ({
         <div className="text-xl">{project.role}</div>
         <div className="mb-2 font-light italic text-accent">{project.date}</div>
         <TechnologiesList technologies={project.technologies} />
-        <div>{project.description}</div>
+        <div className="whitespace-pre-line">{project.description}</div>
         {project.github && (
           <Link href={project.github} passHref>
             <a target="_blank" rel="noopener noreferrer">
