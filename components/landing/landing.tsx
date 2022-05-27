@@ -6,7 +6,7 @@ import landingImg from '../../public/img/landing.png'
 export const Landing: React.FC = () => {
   return (
     <div className="h-screen">
-      <div className="absolute top-0" style={{ right: '-10px' }}>
+      <div className="absolute top-14 right-0">
         <Image src={landingImg} />
       </div>
       <div className="container mx-auto flex h-full flex-col items-start justify-center">
