@@ -13,10 +13,7 @@
   --header: #2d3748;
 
   font-family: 'Poppins', sans-serif;
-}
-
-.body {
-  overflow-x: hidden;
+  color: var(--primary);
 }
 
 .title {

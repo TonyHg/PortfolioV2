@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { AboutMe } from '../components/about/about-me'
+import { Ending } from '../components/ending/ending'
 import { Footer } from '../components/footer/footer'
 import { Landing } from '../components/landing/landing'
 import { Navbar } from '../components/navbar/navbar'
@@ -25,6 +26,10 @@ const Home: NextPage = () => {
           href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
           rel="stylesheet"
         />
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+          rel="stylesheet"
+        />
       </Head>
       <div className="root">
         <Navbar />
@@ -32,6 +37,7 @@ const Home: NextPage = () => {
         <AboutMe />
         <MainProjects />
         <OtherProjects />
+        <Ending />
         <Footer />
       </div>
     </>
