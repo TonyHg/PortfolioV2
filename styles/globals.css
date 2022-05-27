@@ -23,6 +23,10 @@
   margin-bottom: 32px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #design-title {
   font-family: 'Kaushan Script', cursive;
 }
