@@ -10,13 +10,15 @@ export const AboutMe: React.FC = () => {
           <div className="flex w-2/5 flex-col p-10 text-left">
             <div className="whitespace-normal p-5 text-xl">
               Fond of computer sciences and new technologies, I am an ambitious
-              and tenacious person who likes to succeed. Currently 5th year
-              student at{' '}
+              and tenacious person who likes to succeed.
+              <br />
+              <br />
+              Currently 5th year student at{' '}
               <span className="text-secondary">
                 EPITA : Ecole d'Ingénieur en Informatique
               </span>
-              , an engineering school based in Paris. <br />
-              <br />I am looking for an end-of-study intership in{' '}
+              , an engineering school based in Paris.
+              <br />I am looking for an end-of-study internship in{' '}
               <span className="text-secondary">software engineering</span>.
             </div>
           </div>

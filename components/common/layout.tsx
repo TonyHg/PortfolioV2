@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { Footer } from '../footer/footer'
 import { Navbar } from '../navbar/navbar'
+import { Fab } from './fab'
 
 export const Layout: React.FC = ({ children }) => {
   return (
@@ -27,6 +28,7 @@ export const Layout: React.FC = ({ children }) => {
       </Head>
       <div className="root">
         <Navbar />
+        <Fab />
         <div className="pt-24">{children}</div>
         <Footer />
       </div>
