@@ -2,6 +2,7 @@ import Link from 'next/link'
 import styles from '../../styles/footer/footer.module.scss'
 
 import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from 'react-icons/ai'
+import { MdEmail } from 'react-icons/md'
 
 export const Footer = () => {
   return (
@@ -15,6 +16,11 @@ export const Footer = () => {
           </a>
         </Link>
         <div className="flex w-full flex-col items-start lg:ml-auto lg:inline-flex lg:h-auto  lg:w-auto lg:flex-row lg:items-center">
+          <Link href="mailto:tony.heng@epita.fr" passHref>
+            <a target="_blank" rel="noopener noreferrer">
+              <MdEmail className="mx-2 text-2xl text-primary text-white hover:text-secondary hover:text-gray-200" />
+            </a>
+          </Link>
           <Link href="https://www.linkedin.com/in/tony-heng/" passHref>
             <a target="_blank" rel="noopener noreferrer">
               <AiFillLinkedin className="mx-2 text-2xl text-white hover:text-gray-200" />

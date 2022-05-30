@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { BsFillArrowUpCircleFill, BsInfoCircleFill } from 'react-icons/bs'
 import { RiLinkedinFill, RiGithubFill, RiInstagramFill } from 'react-icons/ri'
+import { MdEmail } from 'react-icons/md'
 
 export const Fab: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -16,6 +17,14 @@ export const Fab: React.FC = () => {
     >
       {isOpen ? (
         <div className="flex flex-col items-center">
+          <Link href="mailto:tony.heng@epita.fr" passHref>
+            <a target="_blank" rel="noopener noreferrer">
+              <MdEmail
+                size="24"
+                className="mb-2 text-primary hover:text-secondary"
+              />
+            </a>
+          </Link>
           <Link href="https://www.linkedin.com/in/tony-heng/" passHref>
             <a target="_blank" rel="noopener noreferrer">
               <RiLinkedinFill
