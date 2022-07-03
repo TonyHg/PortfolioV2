@@ -48,7 +48,7 @@ export const Navbar = () => {
                 Home
               </a>
             </Link>
-            <Link href="#projects">
+            <Link href="/#projects">
               <a className="w-full items-center justify-center rounded px-3 py-2 text-secondary transition hover:-translate-y-1 hover:text-primary lg:inline-flex lg:w-auto">
                 Projects
               </a>
