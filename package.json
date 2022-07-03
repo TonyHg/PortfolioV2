@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@types/react-animate-on-scroll": "^2.1.5",
     "lightgallery": "^2.5.0",
     "next": "latest",
     "react": "^17.0.2",
