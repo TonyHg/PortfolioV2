@@ -15,7 +15,7 @@ export const AboutMe: React.FC = () => {
               <br />
               Currently 5th year student at{' '}
               <span className="text-secondary">
-                EPITA : Ecole d'Ingénieur en Informatique
+                EPITA : Ecole d&apos;Ingénieur en Informatique
               </span>
               , an engineering school based in Paris.
               <br />I am looking for an end-of-study internship in{' '}

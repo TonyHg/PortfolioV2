@@ -13,7 +13,7 @@ export const Landing: React.FC = () => {
         <div className="text-5xl font-bold leading-normal">
           Hey!
           <br />
-          I'm <span className="text-secondary">Tony</span>.
+          I&apos;m <span className="text-secondary">Tony</span>.
           <br />I
           <span id="design-title" className="text-secondary">
             {' '}
