@@ -11,7 +11,9 @@ import ocrImg from '../public/img/ocr.png'
 import rgImg from '../public/img/rg.png'
 import upImg from '../public/img/up.png'
 import timImg from '../public/img/tim.png'
+import seoImg from '../public/img/seo.jpeg'
 import bootstrapVueImg from '../public/img/bootstrap-vue.png'
+import tddImg from '../public/img/tdd.png'
 import netImg from '../public/img/net.png'
 import rakutenImg from '../public/img/rakuten.webp'
 import jpegImg from '../public/img/jpg.svg'
@@ -167,26 +169,40 @@ Fancier features like Custom Themes and Shortcuts. ',
 
 export const otherProjects: Project[] = [
   {
+    title: 'SEO',
+    date: 'July 2022',
+    description:
+      'The SEO python app analyzes the web page given an URL and gives many tips for a better SEO.',
+    technologies: [technologies.Python],
+    image: seoImg,
+  },
+  {
     title: 'Bootstrap-vue',
     date: 'June 2022',
     description:
       'Implementation of 8 bootstrap components in Vue3 using Composition API.\nThe idea is to understand how to build a component library (design system).',
     technologies: [technologies.Vue],
     image: bootstrapVueImg,
-    github: 'https://github.com/3outeille/jpeg-algorithm',
+  },
+  {
+    title: 'SOCRUD',
+    date: 'May 2022',
+    description:
+      'SOCRUD is a REST API made in Java Spring Boot. The goal of this project is to make a project following the software craftmanship and best practices.\n-TDD\n-CICD using CircleCI, SonarCloud and GitHub Action\n-Design Pattern (builder and template)',
+    technologies: [technologies.SpringBoot],
+    image: tddImg,
   },
   {
     title: 'Future',
-    date: 'May 2022',
+    date: 'April 2022',
     description:
       'Future is a job search webapp made in .NET MVC. It allows you to search for a job and apply for it.',
     technologies: [technologies.NET, technologies.CSharp],
     image: netImg,
-    github: 'https://github.com/3outeille/jpeg-algorithm',
   },
   {
     title: 'Device Fingerprint',
-    date: 'September-December 2021',
+    date: 'September 2021 - January 2021',
     description:
       'Implementation of a authentication gateway using device fingerprint.\nImplementation of two different 2FA methods: \n- TOTP using Authenticator apps \n- SMS or phone call\nWorked on this project during my 5-month internship at Rakuten.',
     technologies: [
@@ -197,7 +213,6 @@ export const otherProjects: Project[] = [
       technologies.Scala,
     ],
     image: rakutenImg,
-    github: 'https://github.com/3outeille/jpeg-algorithm',
   },
   {
     title: 'JPEG Algorithm',
