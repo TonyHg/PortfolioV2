@@ -47,4 +47,6 @@ export const technologies = {
   Jquery: { title: 'Jquery', color: Color.darkBlue },
   Ajax: { title: 'Ajax', color: Color.darkPurple },
   Aspose: { title: 'Aspose', color: Color.purple },
+  Next: { title: 'Next', color: Color.purple },
+  Scala: { title: 'Scala', color: Color.purple },
 }

@@ -1,6 +1,7 @@
 import { Color } from './colors'
 import { Project } from './types'
 
+import tripnjoyImg from '../public/img/tripnjoy.png'
 import clonestagramImg from '../public/img/clonestagram.png'
 import pingImg from '../public/img/ping.png'
 import epilifeImg from '../public/img/epilife.png'
@@ -10,6 +11,9 @@ import ocrImg from '../public/img/ocr.png'
 import rgImg from '../public/img/rg.png'
 import upImg from '../public/img/up.png'
 import timImg from '../public/img/tim.png'
+import bootstrapVueImg from '../public/img/bootstrap-vue.png'
+import netImg from '../public/img/net.png'
+import rakutenImg from '../public/img/rakuten.webp'
 import jpegImg from '../public/img/jpg.svg'
 import eroImg from '../public/img/ero.svg'
 import jsChatImg from '../public/img/js-chat.png'
@@ -29,14 +33,14 @@ export const mainProjects: Project[] = [
     role: 'Flutter Developer',
     date: 'March-December 2022',
     description:
-      'TripNJoy is an app for planning group trips by connecting people with similar interests. The frontend is built using Flutter and Riverpod as State Manager, the backend in Java Spring Boot.',
+      'TripNJoy is an app for planning group trips by connecting people with similar interests. The frontend is built using Flutter and Riverpod as State Manager, the backend in Java Spring Boot.\n\nFeatures:\n-Create your travel profile\n-Match people with same travel interests\n-Chat and video call\n-Budget management (Tricount-like)\n-Planning management',
     technologies: [
       technologies.Flutter,
       technologies.Riverpod,
       technologies.SpringBoot,
       technologies.Firebase,
     ],
-    image: clonestagramImg,
+    image: tripnjoyImg,
     color: Color.saturatedBlue,
   },
   {
@@ -162,6 +166,39 @@ Fancier features like Custom Themes and Shortcuts. ',
 ]
 
 export const otherProjects: Project[] = [
+  {
+    title: 'Bootstrap-vue',
+    date: 'June 2022',
+    description:
+      'Implementation of 8 bootstrap components in Vue3 using Composition API.\nThe idea is to understand how to build a component library (design system).',
+    technologies: [technologies.Vue],
+    image: bootstrapVueImg,
+    github: 'https://github.com/3outeille/jpeg-algorithm',
+  },
+  {
+    title: 'Future',
+    date: 'May 2022',
+    description:
+      'Future is a job search webapp made in .NET MVC. It allows you to search for a job and apply for it.',
+    technologies: [technologies.NET, technologies.CSharp],
+    image: netImg,
+    github: 'https://github.com/3outeille/jpeg-algorithm',
+  },
+  {
+    title: 'Device Fingerprint',
+    date: 'September-December 2021',
+    description:
+      'Implementation of a authentication gateway using device fingerprint.\nImplementation of two different 2FA methods: \n- TOTP using Authenticator apps \n- SMS or phone call\nWorked on this project during my 5-month internship at Rakuten.',
+    technologies: [
+      technologies.Java,
+      technologies.SpringBoot,
+      technologies.React,
+      technologies.Next,
+      technologies.Scala,
+    ],
+    image: rakutenImg,
+    github: 'https://github.com/3outeille/jpeg-algorithm',
+  },
   {
     title: 'JPEG Algorithm',
     date: 'June 2021',
