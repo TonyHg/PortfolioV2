@@ -10,10 +10,10 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed flex w-full flex-wrap items-center bg-white p-3 px-20 shadow-navbar">
+      <nav className="fixed z-50 flex w-full flex-wrap items-center bg-white p-3 px-20 shadow-md">
         <Link href="/">
           <a className="mr-4 inline-flex items-center p-2 ">
-            <span className="text-xl font-bold uppercase tracking-wide text-secondary">
+            <span className="text-xl font-bold uppercase tracking-wide text-secondary transition hover:text-primary">
               Tony Heng
             </span>
           </a>
@@ -37,7 +37,6 @@ export const Navbar = () => {
             />
           </svg>
         </button>
-        {/*Note that in this div we will use a ternary operator to decide whether or not to display the content of the div  */}
         <div
           className={`${
             active ? '' : 'hidden'
@@ -45,22 +44,22 @@ export const Navbar = () => {
         >
           <div className="flex w-full flex-col items-start lg:ml-auto lg:inline-flex lg:h-auto  lg:w-auto lg:flex-row lg:items-center">
             <Link href="/">
-              <a className="w-full items-center justify-center rounded px-3 py-2 text-secondary lg:inline-flex lg:w-auto ">
+              <a className="w-full items-center justify-center rounded px-3 py-2 text-secondary transition hover:-translate-y-1 hover:text-primary lg:inline-flex lg:w-auto">
                 Home
               </a>
             </Link>
-            <Link href="/">
-              <a className="w-full items-center justify-center rounded px-3 py-2 text-secondary lg:inline-flex lg:w-auto ">
+            <Link href="/#projects">
+              <a className="w-full items-center justify-center rounded px-3 py-2 text-secondary transition hover:-translate-y-1 hover:text-primary lg:inline-flex lg:w-auto">
                 Projects
               </a>
             </Link>
-            <Link href="/">
-              <a className="w-full items-center justify-center rounded px-3 py-2 text-secondary lg:inline-flex lg:w-auto ">
+            <Link href="/gallery">
+              <a className="w-full items-center justify-center rounded px-3 py-2 text-secondary transition hover:-translate-y-1 hover:text-primary lg:inline-flex lg:w-auto">
                 Gallery
               </a>
             </Link>
-            <Link href="/">
-              <a className="w-full items-center justify-center rounded px-3 py-2 text-secondary lg:inline-flex lg:w-auto ">
+            <Link href="/resume">
+              <a className="w-full items-center justify-center rounded px-3 py-2 text-secondary transition hover:-translate-y-1 hover:text-primary lg:inline-flex lg:w-auto">
                 Resume
               </a>
             </Link>

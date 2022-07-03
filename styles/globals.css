@@ -6,13 +6,14 @@
 #root,
 #docs-root {
   --primary: #323f4b;
-  --secondary: #0679bf;
+  --secondary: #2d67d9;
   --accent: #718096;
   --background: #f5f6f7;
   --main: #0d0106;
   --header: #2d3748;
 
   font-family: 'Poppins', sans-serif;
+  color: var(--primary);
 }
 
 .title {
@@ -22,8 +23,19 @@
   margin-bottom: 32px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+#design-title {
+  font-family: 'Kaushan Script', cursive;
+}
+
 @layer components {
   .btn-primary {
-    @apply rounded-lg bg-blue-500 py-2 px-4 font-semibold text-white shadow-md hover:bg-blue-700 focus:outline-none;
+    @apply rounded bg-blue-500 py-2 px-4 font-semibold text-white shadow-md hover:bg-blue-700 focus:outline-none;
+  }
+  .technology {
+    @apply rounded py-1.5 px-4 text-sm font-bold text-background;
   }
 }

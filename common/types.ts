@@ -1,11 +1,25 @@
+import { StaticImageData } from 'next/image'
+
+export interface Technology {
+  title: string
+  color: string
+}
+
 export interface Project {
   title: string
-  role: string
+  role?: string
   date: string
   description?: string
-  technologies?: [string, string][]
-  image?: string
+  technologies: Technology[]
+  image: string | StaticImageData
+  imageWidth?: number
+  imageHeight?: number
   github?: string
   url?: string
-  color: string
+  color?: string
+}
+
+export interface Art {
+  image: string | StaticImageData
+  src: string
 }
