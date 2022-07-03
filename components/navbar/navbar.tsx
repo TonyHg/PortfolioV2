@@ -53,7 +53,7 @@ export const Navbar = () => {
                 Projects
               </a>
             </Link>
-            <Link href="/">
+            <Link href="/gallery">
               <a className="w-full items-center justify-center rounded px-3 py-2 text-secondary transition hover:-translate-y-1 hover:text-primary lg:inline-flex lg:w-auto">
                 Gallery
               </a>

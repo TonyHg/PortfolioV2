@@ -18,3 +18,8 @@ export interface Project {
   url?: string
   color?: string
 }
+
+export interface Art {
+  image: string | StaticImageData
+  src: string
+}
