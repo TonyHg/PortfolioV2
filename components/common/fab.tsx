@@ -14,6 +14,7 @@ export const Fab: React.FC = () => {
       className="fixed bottom-10 right-8 z-10 rounded-full bg-white p-4 shadow-md transition"
       onMouseEnter={(e) => setIsOpen(true)}
       onMouseLeave={(e) => setIsOpen(false)}
+      onClick={(e) => setIsOpen(!isOpen)}
     >
       {isOpen ? (
         <div className="flex flex-col items-center">
