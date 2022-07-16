@@ -10,7 +10,7 @@ import { GalleryCategory } from './gallery-category'
 export const Gallery: React.FC = () => {
   return (
     <>
-      <div className="çontainer mx-auto mb-24 flex flex-col items-center justify-center">
+      <div className="md:çontainer mx-auto mb-24 flex flex-col items-center justify-center">
         <div className="title">Gallery</div>
         <div>
           <Image src={galleryImg} height={400} width={400} />

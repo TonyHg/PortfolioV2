@@ -12,14 +12,14 @@ export const OtherProjectsItem: React.FC<OtherProjectsItemProps> = ({
   project,
 }) => {
   return (
-    <div className="container mb-16 flex justify-center px-44 align-middle">
-      <div className="w-1/6">
-        <div className="relative h-full w-5/6 p-5">
+    <div className="mb-16 flex flex-wrap justify-center px-10 align-middle md:container md:px-44">
+      <div className="w-full md:w-1/6">
+        <div className="relative mb-10 h-full w-full p-5 md:mb-0 md:w-5/6">
           <Image src={project.image} layout="fill" objectFit="scale-down" />
         </div>
       </div>
-      <div className="flex w-5/6 flex-col justify-center align-middle">
-        <div className="mb-2 flex items-end">
+      <div className="mt-5 flex w-full flex-col justify-center align-middle md:mt-0 md:w-5/6">
+        <div className="mb-2 flex flex-wrap items-end">
           {project.url ? (
             <Link href={project.url} passHref>
               <a target="_blank" rel="noopener noreferrer" className="mr-2">

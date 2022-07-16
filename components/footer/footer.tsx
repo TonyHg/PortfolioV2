@@ -7,15 +7,17 @@ import { MdEmail } from 'react-icons/md'
 export const Footer = () => {
   return (
     <>
-      <nav className={`flex flex-wrap items-center p-3 px-20 ${styles.footer}`}>
+      <nav
+        className={`flex flex-wrap justify-center p-3 px-20 ${styles.footer}`}
+      >
         <Link href="/">
-          <a className="mr-4 inline-flex items-center p-2 ">
+          <a className="jusitfy-center mr-0 inline-flex p-2 md:mr-4 ">
             <span className="text-xl font-bold uppercase tracking-wide text-white hover:text-gray-200">
               Tony Heng
             </span>
           </a>
         </Link>
-        <div className="flex w-full flex-col items-start lg:ml-auto lg:inline-flex lg:h-auto  lg:w-auto lg:flex-row lg:items-center">
+        <div className="flex w-full flex-row justify-center md:flex-col md:justify-start lg:ml-auto lg:inline-flex lg:h-auto  lg:w-auto lg:flex-row lg:items-center">
           <Link href="mailto:tony.heng@epita.fr" passHref>
             <a target="_blank" rel="noopener noreferrer">
               <MdEmail className="mx-2 text-2xl text-primary text-white hover:text-secondary hover:text-gray-200" />

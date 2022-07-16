@@ -10,7 +10,11 @@ export const GalleryItem: React.FC<GalleryItemProps> = ({
 }: GalleryItemProps) => {
   return (
     <>
-      <a className="h-60 w-60" data-src={image.src} data-lg-size="1406-1390">
+      <a
+        className="mt-2 h-60 w-60"
+        data-src={image.src}
+        data-lg-size="1406-1390"
+      >
         <img
           className="h-full w-full rounded object-cover"
           src={image.src}
