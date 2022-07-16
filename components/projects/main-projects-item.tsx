@@ -25,6 +25,7 @@ export const MainProjectsItem: React.FC<MainProjectsItemProps> = ({
             src={project.image}
             width={project.imageWidth}
             height={project.imageHeight}
+            alt="project-image"
           />
         </div>
       </div>

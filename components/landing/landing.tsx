@@ -7,7 +7,7 @@ export const Landing: React.FC = () => {
   return (
     <div className="md:h-screen">
       <div className="absolute top-14 right-0">
-        <Image src={landingImg} />
+        <Image src={landingImg} alt="landing-image" />
       </div>
       <div className="mx-auto my-36 flex h-full flex-col items-start justify-center p-10 md:container md:my-auto">
         <div className="text-3xl font-bold leading-normal md:text-5xl">

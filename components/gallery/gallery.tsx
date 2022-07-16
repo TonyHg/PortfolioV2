@@ -13,7 +13,7 @@ export const Gallery: React.FC = () => {
       <div className="md:çontainer mx-auto mb-24 flex flex-col items-center justify-center">
         <div className="title">Gallery</div>
         <div>
-          <Image src={galleryImg} height={400} width={400} />
+          <Image src={galleryImg} height={400} width={400} alt="gallery-image" />
         </div>
         <GalleryCategory category="Vector Arts" images={vectorArts} />
         <GalleryCategory

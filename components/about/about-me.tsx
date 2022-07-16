@@ -23,7 +23,7 @@ export const AboutMe: React.FC = () => {
             </div>
           </div>
           <div className="flex p-5 md:w-2/5 md:p-0">
-            <Image src={aboutMeImg} className="m-auto" />
+            <Image src={aboutMeImg} className="m-auto" alt="tony-about-me-image" />
           </div>
         </div>
       </div>

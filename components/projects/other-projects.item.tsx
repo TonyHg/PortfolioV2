@@ -15,7 +15,7 @@ export const OtherProjectsItem: React.FC<OtherProjectsItemProps> = ({
     <div className="mb-16 flex flex-wrap justify-center px-10 align-middle md:container md:px-44">
       <div className="w-full md:w-1/6">
         <div className="relative mb-10 h-full w-full p-5 md:mb-0 md:w-5/6">
-          <Image src={project.image} layout="fill" objectFit="scale-down" />
+          <Image src={project.image} layout="fill" objectFit="scale-down" alt="project-image"/>
         </div>
       </div>
       <div className="mt-5 flex w-full flex-col justify-center align-middle md:mt-0 md:w-5/6">
