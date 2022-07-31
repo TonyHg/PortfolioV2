@@ -1,8 +1,13 @@
 import Link from 'next/link'
 import { useState } from 'react'
+import { BsFillSunFill } from 'react-icons/bs'
+import { FaMoon } from 'react-icons/fa'
+import { Theme } from '../../common/types'
+import { useDarkMode } from '../../hooks/useDarkMode'
 
 export const Navbar = () => {
   const [active, setActive] = useState(false)
+  const [theme, toggleTheme] = useDarkMode()
 
   const handleClick = () => {
     setActive(!active)
@@ -64,6 +69,14 @@ export const Navbar = () => {
               </a>
             </Link>
           </div>
+        </div>
+        <div
+          onClick={() => {
+            toggleTheme()
+          }}
+          className="cursor-pointer text-secondary"
+        >
+          {theme === Theme.light ? <BsFillSunFill /> : <FaMoon />}
         </div>
       </nav>
     </>

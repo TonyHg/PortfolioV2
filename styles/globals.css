@@ -11,6 +11,10 @@
   --background: #f5f6f7;
   --main: #0d0106;
   --header: #2d3748;
+  --dark-primary: #f5f6f7;
+  --dark-secondary: #2d67d9;
+  --dark-accent: #28292a;
+  --dark-background: #28292a;
 
   font-family: 'Poppins', sans-serif;
   color: var(--primary);
