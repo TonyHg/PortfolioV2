@@ -15,7 +15,12 @@ export const OtherProjectsItem: React.FC<OtherProjectsItemProps> = ({
     <div className="mb-16 flex flex-wrap justify-center px-10 align-middle md:container md:px-44">
       <div className="w-full md:w-1/6">
         <div className="relative mb-10 h-full w-full p-5 md:mb-0 md:w-5/6">
-          <Image src={project.image} layout="fill" objectFit="scale-down" alt="project-image"/>
+          <Image
+            src={project.image}
+            layout="fill"
+            objectFit="scale-down"
+            alt="project-image"
+          />
         </div>
       </div>
       <div className="mt-5 flex w-full flex-col justify-center align-middle md:mt-0 md:w-5/6">
@@ -23,13 +28,13 @@ export const OtherProjectsItem: React.FC<OtherProjectsItemProps> = ({
           {project.url ? (
             <Link href={project.url} passHref>
               <a target="_blank" rel="noopener noreferrer" className="mr-2">
-                <span className="rounded bg-gray-200 px-2 hover:bg-gray-300">
+                <span className="rounded bg-gray-200 px-2 hover:bg-gray-300 dark:bg-gray-700">
                   {project.title}
                 </span>
               </a>
             </Link>
           ) : (
-            <span className="mr-2 rounded bg-gray-200 px-2">
+            <span className="mr-2 rounded bg-gray-200 px-2 dark:bg-gray-700">
               {project.title}
             </span>
           )}
