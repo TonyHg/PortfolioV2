@@ -2,7 +2,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 
 export const Ending: React.FC = () => {
   return (
-    <div className="mx-auto mb-16 overflow-hidden p-5 text-right text-2xl font-bold text-primary md:container md:text-3xl">
+    <div className="mx-auto mb-16 overflow-hidden p-5 text-right text-2xl font-bold text-primary dark:text-dark-primary md:container md:text-3xl">
       <ScrollAnimation animateIn="fadeInRight">
         You have reached the end!
       </ScrollAnimation>

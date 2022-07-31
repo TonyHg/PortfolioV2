@@ -9,9 +9,13 @@ export const Fab: React.FC = () => {
   const scrollToTop = () => {
     window.scrollTo(0, 0)
   }
+
+  const iconStyle: string =
+    'mb-2 text-primary hover:text-secondary dark:text-dark-primary hover:dark:text-secondary'
+
   return (
     <div
-      className="fixed bottom-10 right-8 z-10 rounded-full bg-white p-4 shadow-md transition"
+      className="fixed bottom-10 right-8 z-10 rounded-full bg-background p-4 shadow-md transition dark:bg-dark-background"
       onMouseEnter={(e) => setIsOpen(true)}
       onMouseLeave={(e) => setIsOpen(false)}
       onClick={(e) => setIsOpen(!isOpen)}
@@ -20,34 +24,22 @@ export const Fab: React.FC = () => {
         <div className="flex flex-col items-center">
           <Link href="mailto:tony.heng@epita.fr" passHref>
             <a target="_blank" rel="noopener noreferrer">
-              <MdEmail
-                size="24"
-                className="mb-2 text-primary hover:text-secondary"
-              />
+              <MdEmail size="24" className={iconStyle} />
             </a>
           </Link>
           <Link href="https://www.linkedin.com/in/tony-heng/" passHref>
             <a target="_blank" rel="noopener noreferrer">
-              <RiLinkedinFill
-                size="24"
-                className="mb-2 text-primary hover:text-secondary"
-              />
+              <RiLinkedinFill size="24" className={iconStyle} />
             </a>
           </Link>
           <Link href="https://github.com/TonyHg" passHref>
             <a target="_blank" rel="noopener noreferrer">
-              <RiGithubFill
-                size="24"
-                className="mb-2 text-primary hover:text-secondary"
-              />
+              <RiGithubFill size="24" className={iconStyle} />
             </a>
           </Link>
           <Link href="https://www.instagram.com/thdesign._/" passHref>
             <a target="_blank" rel="noopener noreferrer">
-              <RiInstagramFill
-                size="24"
-                className="mb-2 text-primary hover:text-secondary"
-              />
+              <RiInstagramFill size="24" className={iconStyle} />
             </a>
           </Link>
           <BsFillArrowUpCircleFill
