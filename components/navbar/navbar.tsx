@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import { useState } from 'react'
-import { BsFillSunFill } from 'react-icons/bs'
-import { FaMoon } from 'react-icons/fa'
+import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs'
 import { Theme } from '../../common/types'
 import { useDarkMode } from '../../hooks/useDarkMode'
 
@@ -71,7 +70,7 @@ export const Navbar = () => {
           }}
           className="cursor-pointer text-secondary hover:text-primary hover:dark:text-dark-primary md:ml-8"
         >
-          {theme === Theme.light ? <BsFillSunFill /> : <FaMoon />}
+          {theme === Theme.light ? <BsFillSunFill /> : <BsFillMoonFill />}
         </div>
       </nav>
     </>

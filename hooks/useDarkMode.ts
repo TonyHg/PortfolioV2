@@ -9,12 +9,18 @@ function stringToTheme(theme: string): Theme {
   return theme === 'dark' ? Theme.dark : Theme.light
 }
 
-export const useDarkMode = (): [Theme, () => void] => {
-  const [theme, setTheme] = useState<Theme>(
-    typeof window !== 'undefined'
-      ? stringToTheme(localStorage.theme)
+function findPreferredTheme(): Theme {
+  const theme = typeof window !== 'undefined' ? localStorage.theme : Theme.light
+  if (theme === undefined) {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches
+      ? Theme.dark
       : Theme.light
-  )
+  }
+  return stringToTheme(theme)
+}
+
+export const useDarkMode = (): [Theme, () => void] => {
+  const [theme, setTheme] = useState<Theme>(findPreferredTheme())
 
   const toggleTheme = () => {
     setTheme(theme === Theme.dark ? Theme.light : Theme.dark)
