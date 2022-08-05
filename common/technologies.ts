@@ -49,4 +49,7 @@ export const technologies = {
   Aspose: { title: 'Aspose', color: Color.purple },
   Next: { title: 'Next', color: '#7CD3D4' },
   Scala: { title: 'Scala', color: '#D33121' },
+  CircleCI: { title: 'CircleCI', color: '#00353E' },
+  Sentry: { title: 'Sentry', color: '#E82D2C' },
+  SonarCloud: { title: 'SonarCloud', color: '#EC6E2F' },
 }

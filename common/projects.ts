@@ -11,6 +11,8 @@ import ocrImg from '../public/img/ocr.png'
 import rgImg from '../public/img/rg.png'
 import upImg from '../public/img/up.png'
 import timImg from '../public/img/tim.png'
+import tripnjoyboImg from '../public/img/tripnjoybo.svg'
+import devopsImg from '../public/img/devops.svg'
 import seoImg from '../public/img/seo.png'
 import bootstrapVueImg from '../public/img/bootstrap-vue.png'
 import tddImg from '../public/img/TDD.png'
@@ -168,6 +170,32 @@ Fancier features like Custom Themes and Shortcuts. ',
 ]
 
 export const otherProjects: Project[] = [
+  {
+    title: 'TripNJoy Back Office',
+    date: 'August 2022 - September 2022',
+    description:
+      'Back Office of the mobile app TripNJoy. This application is made in TypeScript using React.js and Next.js',
+    technologies: [
+      technologies.TypeScript,
+      technologies.React,
+      technologies.Next,
+    ],
+    image: tripnjoyboImg,
+  },
+  {
+    title: 'Phoenix Bot',
+    date: 'July 2022',
+    description:
+      "Devops implementation for a discord bot called 'Phoenix-bot'.\nImplementation of the DockerFile, CircleCi, Sentry and SonarCloud, and their integration with discord webhook.",
+    technologies: [
+      technologies.Docker,
+      technologies.CircleCI,
+      technologies.Sentry,
+      technologies.SonarCloud,
+    ],
+    image: devopsImg,
+    github: 'https://github.com/GabRayz/Phoenix-Bot',
+  },
   {
     title: 'SEO',
     date: 'July 2022',
