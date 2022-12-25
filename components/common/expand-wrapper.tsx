@@ -39,7 +39,7 @@ const ExpandWrapper: React.FC<ExpandWrapperProps> = ({
       <button
         ref={expandedBtnRef}
         onClick={onToggleExpanded}
-        className="mt-6 flex items-center justify-center gap-2"
+        className="mt-6 flex items-center justify-center gap-2 hover:animate-pulse"
       >
         <MdKeyboardArrowDown
           className={`transition-all ${expanded ? 'rotate-180' : 'rotate-0'}`}
