@@ -38,6 +38,22 @@ import { technologies } from './technologies'
 
 export const mainProjects: Project[] = [
   {
+    title: 'Tuka',
+    role: 'Frontend Engineer',
+    date: 'July-December 2022',
+    description:
+      "Tuka is a webapp to monitor institution (school, company, etc) paper consumption. It aims to reduce paper consumption by increasing deforestation awareness.\n\nThe app is composed of a front-office and a back-office.\nThe front end displays an interactive 3d map of the user's institution, accompanied by trees around it, depending on the institution's paper consumption, the number of trees decreases.\n\nThe app is built with React, Next.js, and TailwindCSS. It uses Auth0 for authentication.",
+    technologies: [
+      technologies.ThreeJs,
+      technologies.React,
+      technologies.Next,
+      technologies.Tailwind,
+      technologies.Auth0,
+    ],
+    image: tripnjoyImg,
+    color: Color.darkGreen,
+  },
+  {
     title: 'TripNJoy',
     role: 'Flutter Developer',
     date: 'March-December 2022',
