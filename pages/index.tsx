@@ -10,6 +10,9 @@ import { OtherProjects } from '../components/projects/other-projects'
 const Home: NextPage = () => {
   return (
     <>
+      <Head>
+        <title>Tony Heng - Portfolio</title>
+      </Head>
       <Layout>
         <Landing />
         <AboutMe />
