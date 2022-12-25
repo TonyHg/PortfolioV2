@@ -31,7 +31,7 @@ const ExpandWrapper: React.FC<ExpandWrapperProps> = ({
     >
       <div className="title">{title}</div>
       <div
-        className={expanded ? 'max-h-auto' : 'max-h-[290vh] overflow-y-hidden'}
+        className={expanded ? 'max-h-auto' : 'max-h-[300vh] overflow-y-hidden'}
       >
         {children}
       </div>
