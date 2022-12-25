@@ -12,6 +12,7 @@ import rgImg from '../public/img/rg.png'
 import upImg from '../public/img/up.png'
 import timImg from '../public/img/tim.png'
 
+import kosImg from '../public/img/kos.png'
 import johnMcCarthyImg from '../public/img/john-mccarthy.png'
 import seoImg from '../public/img/seo.jpeg'
 import bootstrapVueImg from '../public/img/bootstrap-vue.png'
@@ -170,6 +171,19 @@ Fancier features like Custom Themes and Shortcuts. ',
 ]
 
 export const otherProjects: Project[] = [
+  {
+    title: 'King Of Smash',
+    date: 'November 2022',
+    description:
+      'King Of Smash is the adaptation of the board game King Of Tokyo in a Smash Bros style. The goal is to be the last character standing in the Final Destination. The game is made for Android.',
+    technologies: [
+      technologies.Android,
+      technologies.Kotlin,
+      technologies.Figma,
+    ],
+    image: kosImg,
+    github: 'https://github.com/SmashedPotatoes/king-of-smash',
+  },
   {
     title: 'John McCarthy',
     date: 'November 2022',
