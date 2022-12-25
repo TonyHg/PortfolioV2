@@ -12,6 +12,7 @@ import rgImg from '../public/img/rg.png'
 import upImg from '../public/img/up.png'
 import timImg from '../public/img/tim.png'
 
+import threeJsImg from '../public/img/threejs.png'
 import kosImg from '../public/img/kos.png'
 import johnMcCarthyImg from '../public/img/john-mccarthy.png'
 import seoImg from '../public/img/seo.png'
@@ -174,8 +175,22 @@ Fancier features like Custom Themes and Shortcuts. ',
 
 export const otherProjects: Project[] = [
   {
+    title: 'Coruscent In Tenebris',
+    date: 'December 2022',
+    description:
+      'Coruscent In Tenebris is a black market website made using Three.js. Find anything and everything in this black market, every item has its own secrets...',
+    technologies: [
+      technologies.ThreeJs,
+      technologies.React,
+      technologies.Figma,
+    ],
+    image: threeJsImg,
+    url: 'https://coruscent-in-tenebris.vercel.app/',
+    github: 'https://github.com/TonyHg/threejs-shop',
+  },
+  {
     title: 'King Of Smash',
-    date: 'November 2022',
+    date: 'November 2022 - December 2022',
     description:
       'King Of Smash is the adaptation of the board game King Of Tokyo in a Smash Bros style. The goal is to be the last character standing in the Final Destination. The game is made for Android.',
     technologies: [

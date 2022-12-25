@@ -55,4 +55,5 @@ export const technologies = {
   CircleCI: { title: 'CircleCI', color: '#00353E' },
   Sentry: { title: 'Sentry', color: '#E82D2C' },
   SonarCloud: { title: 'SonarCloud', color: '#EC6E2F' },
+  ThreeJs: { title: 'Three.js', color: '#2f3f5b' },
 }
