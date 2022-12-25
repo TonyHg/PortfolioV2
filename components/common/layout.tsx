@@ -1,3 +1,4 @@
+import React from 'react'
 import Head from 'next/head'
 import { Footer } from '../footer/footer'
 import { Navbar } from '../navbar/navbar'

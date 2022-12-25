@@ -12,6 +12,7 @@ export const Color = {
   pink: '#CE498A',
   lightGreen: '#74c588',
   green: '#3DDC84',
+  darkGreen: '#5DAF32',
   turquoise: '#00B397',
   red: '#eb4034;',
   darkRed: '#b92E34',

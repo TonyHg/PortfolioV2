@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { Project } from '../../common/types'
-import { FaGithubSquare } from 'react-icons/fa'
+import { FaExternalLinkSquareAlt, FaGithubSquare } from 'react-icons/fa'
 import { TechnologiesList } from './technologies-list'
 import Image from 'next/image'
 
@@ -37,6 +37,16 @@ export const OtherProjectsItem: React.FC<OtherProjectsItemProps> = ({
             <span className="mr-2 rounded bg-gray-200 px-2 dark:bg-gray-700">
               {project.title}
             </span>
+          )}
+          {project.url && (
+            <Link href={project.url} passHref>
+              <a target="_blank" rel="noopener noreferrer" className="mr-2">
+                <FaExternalLinkSquareAlt
+                  fontSize={24}
+                  className="hover:text-primary"
+                />
+              </a>
+            </Link>
           )}
           {project.github && (
             <Link href={project.github} passHref>

@@ -11,9 +11,14 @@ import ocrImg from '../public/img/ocr.png'
 import rgImg from '../public/img/rg.png'
 import upImg from '../public/img/up.png'
 import timImg from '../public/img/tim.png'
+
+import a11yImg from '../public/img/a11y.png'
+import threeJsImg from '../public/img/threejs.png'
+import kosImg from '../public/img/kos.png'
+import johnMcCarthyImg from '../public/img/john-mccarthy.png'
+import seoImg from '../public/img/seo.png'
 import tripnjoyboImg from '../public/img/tripnjoybo.svg'
 import devopsImg from '../public/img/devops.svg'
-import seoImg from '../public/img/seo.png'
 import bootstrapVueImg from '../public/img/bootstrap-vue.png'
 import tddImg from '../public/img/TDD.png'
 import netImg from '../public/img/net.png'
@@ -32,6 +37,22 @@ import simonImg from '../public/img/SimonDrive.png'
 import { technologies } from './technologies'
 
 export const mainProjects: Project[] = [
+  {
+    title: 'Tuka',
+    role: 'Frontend Engineer',
+    date: 'July-December 2022',
+    description:
+      "Tuka is a webapp to monitor institution (school, company, etc) paper consumption. It aims to reduce paper consumption by increasing deforestation awareness.\n\nThe app is composed of a front-office and a back-office.\nThe front end displays an interactive 3d map of the user's institution, accompanied by trees around it, depending on the institution's paper consumption, the number of trees decreases.\n\nThe app is built with React, Next.js, and TailwindCSS. It uses Auth0 for authentication.",
+    technologies: [
+      technologies.ThreeJs,
+      technologies.React,
+      technologies.Next,
+      technologies.Tailwind,
+      technologies.Auth0,
+    ],
+    image: tripnjoyImg,
+    color: Color.darkGreen,
+  },
   {
     title: 'TripNJoy',
     role: 'Flutter Developer',
@@ -170,6 +191,58 @@ Fancier features like Custom Themes and Shortcuts. ',
 ]
 
 export const otherProjects: Project[] = [
+  {
+    title: 'Nile - The accessibility e-commerce',
+    date: 'December 2022 - January 2022',
+    description:
+      'Nile is an Amazon with accessibility. The goal is to provide a better experience for people with disabilities following a11y principles. The website is made in Svelte using SvelteKit.',
+    technologies: [
+      technologies.A11Y,
+      technologies.Svelte,
+      technologies.SvelteKit,
+    ],
+    image: a11yImg,
+  },
+  {
+    title: 'Coruscent In Tenebris',
+    date: 'December 2022',
+    description:
+      'Coruscent In Tenebris is a black market website made using Three.js. Find anything and everything in this black market, every item has its own secrets...',
+    technologies: [
+      technologies.ThreeJs,
+      technologies.React,
+      technologies.Figma,
+    ],
+    image: threeJsImg,
+    url: 'https://coruscent-in-tenebris.vercel.app/',
+    github: 'https://github.com/TonyHg/threejs-shop',
+  },
+  {
+    title: 'King Of Smash',
+    date: 'November 2022 - December 2022',
+    description:
+      'King Of Smash is the adaptation of the board game King Of Tokyo in a Smash Bros style. The goal is to be the last character standing in the Final Destination. The game is made for Android.',
+    technologies: [
+      technologies.Android,
+      technologies.Kotlin,
+      technologies.Figma,
+    ],
+    image: kosImg,
+    github: 'https://github.com/SmashedPotatoes/king-of-smash',
+  },
+  {
+    title: 'John McCarthy',
+    date: 'November 2022',
+    description:
+      'Using Azure Cognitive & Vision AI Services, John McCarthy is a trained AI that can detect tumor from MRI scans. John McCarthy tells you if you tumor is benign or malignant given the tumor diameter and your age.',
+    technologies: [
+      technologies.AzureML,
+      technologies.AzureDataFactory,
+      technologies.CustomVision,
+      technologies.React,
+    ],
+    image: johnMcCarthyImg,
+  },
   {
     title: 'TripNJoy Back Office',
     date: 'August 2022 - September 2022',
