@@ -56,4 +56,7 @@ export const technologies = {
   Sentry: { title: 'Sentry', color: '#E82D2C' },
   SonarCloud: { title: 'SonarCloud', color: '#EC6E2F' },
   ThreeJs: { title: 'Three.js', color: '#2f3f5b' },
+  Svelte: { title: 'Svelte', color: '#FF3E00' },
+  SvelteKit: { title: 'SvelteKit', color: '#FF3E00' },
+  A11Y: { title: 'A11Y', color: '#3f60e9' },
 }

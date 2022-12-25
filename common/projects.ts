@@ -12,6 +12,7 @@ import rgImg from '../public/img/rg.png'
 import upImg from '../public/img/up.png'
 import timImg from '../public/img/tim.png'
 
+import a11yImg from '../public/img/a11y.png'
 import threeJsImg from '../public/img/threejs.png'
 import kosImg from '../public/img/kos.png'
 import johnMcCarthyImg from '../public/img/john-mccarthy.png'
@@ -174,6 +175,18 @@ Fancier features like Custom Themes and Shortcuts. ',
 ]
 
 export const otherProjects: Project[] = [
+  {
+    title: 'Nile - The accessibility e-commerce',
+    date: 'December 2022 - January 2022',
+    description:
+      'Nile is an Amazon with accessibility. The goal is to provide a better experience for people with disabilities following a11y principles. The website is made in Svelte using SvelteKit.',
+    technologies: [
+      technologies.A11Y,
+      technologies.Svelte,
+      technologies.SvelteKit,
+    ],
+    image: a11yImg,
+  },
   {
     title: 'Coruscent In Tenebris',
     date: 'December 2022',
