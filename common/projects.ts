@@ -11,6 +11,8 @@ import ocrImg from '../public/img/ocr.png'
 import rgImg from '../public/img/rg.png'
 import upImg from '../public/img/up.png'
 import timImg from '../public/img/tim.png'
+
+import johnMcCarthyImg from '../public/img/john-mccarthy.png'
 import seoImg from '../public/img/seo.jpeg'
 import bootstrapVueImg from '../public/img/bootstrap-vue.png'
 import tddImg from '../public/img/TDD.png'
@@ -168,6 +170,19 @@ Fancier features like Custom Themes and Shortcuts. ',
 ]
 
 export const otherProjects: Project[] = [
+  {
+    title: 'John McCarthy',
+    date: 'November 2022',
+    description:
+      'Using Azure Cognitive & Vision AI Services, John McCarthy is a trained AI that can detect tumor from MRI scans. John McCarthy tells you if you tumor is benign or malignant given the tumor diameter and your age.',
+    technologies: [
+      technologies.AzureML,
+      technologies.AzureDataFactory,
+      technologies.CustomVision,
+      technologies.React,
+    ],
+    image: johnMcCarthyImg,
+  },
   {
     title: 'SEO',
     date: 'July 2022',

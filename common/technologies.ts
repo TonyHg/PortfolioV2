@@ -49,4 +49,7 @@ export const technologies = {
   Aspose: { title: 'Aspose', color: Color.purple },
   Next: { title: 'Next', color: '#7CD3D4' },
   Scala: { title: 'Scala', color: '#D33121' },
+  AzureML: { title: 'Azure ML', color: '#2c97ec' },
+  AzureDataFactory: { title: 'Azure Data Factory', color: '#0078D4' },
+  CustomVision: { title: 'Custom Vision', color: '#0e426c' },
 }
