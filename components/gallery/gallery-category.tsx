@@ -18,7 +18,7 @@ export const GalleryCategory: React.FC<GalleryCategoryProps> = ({
 }: GalleryCategoryProps) => {
   return (
     <>
-      <div className="container pt-5">
+      <div className="pt-5 md:container">
         <div className="w-full text-center text-lg">{category}</div>
         <LightGallery elementClassNames="justify-around flex flex-wrap p-10">
           {images.map((image, idx) => (

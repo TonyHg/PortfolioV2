@@ -1,3 +1,4 @@
+import React from 'react'
 import Head from 'next/head'
 import { Footer } from '../footer/footer'
 import { Navbar } from '../navbar/navbar'
@@ -26,7 +27,7 @@ export const Layout: React.FC = ({ children }) => {
           rel="stylesheet"
         />
       </Head>
-      <div className="root">
+      <div className="root bg-background text-primary dark:bg-dark-background dark:text-dark-primary">
         <Navbar />
         <Fab />
         <div className="pt-24">{children}</div>

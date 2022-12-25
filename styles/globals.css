@@ -11,9 +11,18 @@
   --background: #f5f6f7;
   --main: #0d0106;
   --header: #2d3748;
+  --dark-primary: #d0d5da;
+  --dark-secondary: #2d67d9;
+  --dark-accent: #28292a;
+  --dark-background: #28292a;
 
   font-family: 'Poppins', sans-serif;
   color: var(--primary);
+}
+
+.dark,
+.dark .title {
+  color: var(--dark-primary);
 }
 
 .title {
@@ -27,6 +36,10 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  transition: all 200ms ease-in-out;
+}
+
 #design-title {
   font-family: 'Kaushan Script', cursive;
 }
@@ -35,9 +48,15 @@ html {
   position: absolute;
   height: 5rem;
   bottom: 2rem;
-  -moz-box-shadow: inset 0 -20px 10px -10px #fff;
-  -webkit-box-shadow: inset 0 -20px 10px -10px #fff;
-  box-shadow: inset 0 -30px 50px -5px #fff;
+  -moz-box-shadow: inset 0 -40px 30px -5px var(--background);
+  -webkit-box-shadow: inset 0 -40px 30px -5px var(--background);
+  box-shadow: inset 0 -40px 30px -5px var(--background);
+}
+
+.dark .bottom-inner-shadow {
+  -moz-box-shadow: inset 0 -40px 30px -5px var(--dark-background);
+  -webkit-box-shadow: inset 0 -40px 30px -5px var(--dark-background);
+  box-shadow: inset 0 -40px 30px -5px var(--dark-background);
 }
 
 @layer components {

@@ -52,4 +52,7 @@ export const technologies = {
   AzureML: { title: 'Azure ML', color: '#2c97ec' },
   AzureDataFactory: { title: 'Azure Data Factory', color: '#0078D4' },
   CustomVision: { title: 'Custom Vision', color: '#0e426c' },
+  CircleCI: { title: 'CircleCI', color: '#00353E' },
+  Sentry: { title: 'Sentry', color: '#E82D2C' },
+  SonarCloud: { title: 'SonarCloud', color: '#EC6E2F' },
 }

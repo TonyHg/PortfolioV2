@@ -5,12 +5,12 @@ import landingImg from '../../public/img/landing.png'
 
 export const Landing: React.FC = () => {
   return (
-    <div className="h-screen">
+    <div className="md:h-screen">
       <div className="absolute top-14 right-0">
-        <Image src={landingImg} />
+        <Image src={landingImg} alt="landing-image" />
       </div>
-      <div className="container mx-auto flex h-full flex-col items-start justify-center">
-        <div className="text-5xl font-bold leading-normal">
+      <div className="mx-auto my-36 flex h-full flex-col items-start justify-center p-10 md:container md:my-auto">
+        <div className="text-3xl font-bold leading-normal md:text-5xl">
           Hey!
           <br />
           I&apos;m <span className="text-secondary">Tony</span>.

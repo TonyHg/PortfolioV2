@@ -14,11 +14,13 @@ import timImg from '../public/img/tim.png'
 
 import kosImg from '../public/img/kos.png'
 import johnMcCarthyImg from '../public/img/john-mccarthy.png'
-import seoImg from '../public/img/seo.jpeg'
+import seoImg from '../public/img/seo.png'
+import tripnjoyboImg from '../public/img/tripnjoybo.svg'
+import devopsImg from '../public/img/devops.svg'
 import bootstrapVueImg from '../public/img/bootstrap-vue.png'
 import tddImg from '../public/img/TDD.png'
 import netImg from '../public/img/net.png'
-import rakutenImg from '../public/img/rakuten.webp'
+import rakutenImg from '../public/img/rakuten.png'
 import jpegImg from '../public/img/jpg.svg'
 import eroImg from '../public/img/ero.svg'
 import jsChatImg from '../public/img/js-chat.png'
@@ -125,7 +127,7 @@ Fancier features like Custom Themes and Shortcuts. ',
       'OCR stands for Optical Character Recognition. A project made in C, with the use of a basic neural network trained, allows you to recover the text in the image of a printed text.\n\nImplementation: \n- Preprocessing  \n- Neural Network  \n- Postprocessing  \n- Dataset',
     technologies: [technologies.C],
     image: ocrImg,
-    github: 'https://github.com/TonyHg/OCR-1',
+    // github: 'https://github.com/TonyHg/OCR-1',
     imageHeight: 400,
     imageWidth: 500,
     color: Color.purple,
@@ -154,7 +156,7 @@ Fancier features like Custom Themes and Shortcuts. ',
       'Uprising is a first person shooter game, which goals is to jump from platforms to platforms to get to the top of the map, shoot the other players to make them fall. The last player remaining wins. This game aims to be simple and easy to play.',
     technologies: [technologies.Unity, technologies.Figma],
     image: upImg,
-    github: 'https://github.com/TonyHg/Uprising',
+    // github: 'https://github.com/TonyHg/Uprising',
     color: Color.darkRed,
   },
   {
@@ -165,7 +167,7 @@ Fancier features like Custom Themes and Shortcuts. ',
       'Time is Monet is a 2D platformer made in Python. You are playing a student late to his math lesson. Hurry up! You need to pass through the others students in order to be in time.',
     technologies: [technologies.Python, technologies.Pygame],
     image: timImg,
-    github: 'https://github.com/TonyHg/TimeIsMonet',
+    // github: 'https://github.com/TonyHg/TimeIsMonet',
     color: Color.skyBlue,
   },
 ]
@@ -196,6 +198,32 @@ export const otherProjects: Project[] = [
       technologies.React,
     ],
     image: johnMcCarthyImg,
+  },
+  {
+    title: 'TripNJoy Back Office',
+    date: 'August 2022 - September 2022',
+    description:
+      'Back Office of the mobile app TripNJoy. This application is made in TypeScript using React.js and Next.js',
+    technologies: [
+      technologies.TypeScript,
+      technologies.React,
+      technologies.Next,
+    ],
+    image: tripnjoyboImg,
+  },
+  {
+    title: 'Phoenix Bot',
+    date: 'July 2022',
+    description:
+      "Devops implementation for a discord bot called 'Phoenix-bot'.\nImplementation of the DockerFile, CircleCi, Sentry and SonarCloud, and their integration with discord webhook.",
+    technologies: [
+      technologies.Docker,
+      technologies.CircleCI,
+      technologies.Sentry,
+      technologies.SonarCloud,
+    ],
+    image: devopsImg,
+    github: 'https://github.com/GabRayz/Phoenix-Bot',
   },
   {
     title: 'SEO',

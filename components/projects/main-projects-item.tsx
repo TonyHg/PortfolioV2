@@ -14,21 +14,22 @@ export const MainProjectsItem: React.FC<MainProjectsItemProps> = ({
 }) => {
   return (
     <div
-      className={`container mb-28 flex ${
+      className={`mb-28 flex flex-wrap md:container ${
         isLeft ? 'flex-row-reverse' : 'flex-row'
       }`}
     >
-      <div className="w-1/2">
+      <div className="w-full p-5 md:w-1/2 md:p-0">
         <div className="flex h-full items-center justify-center align-middle">
           <Image
             className="m-auto"
             src={project.image}
             width={project.imageWidth}
             height={project.imageHeight}
+            alt="project-image"
           />
         </div>
       </div>
-      <div className="flex w-1/2 flex-col justify-center p-10 text-left">
+      <div className="flex w-full flex-col justify-center p-10 text-left md:w-1/2">
         <div
           className="mb-6 text-3xl font-semibold uppercase tracking-wide text-primary"
           style={{ color: project.color }}
