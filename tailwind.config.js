@@ -6,16 +6,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "var(--primary)",
-        secondary: "var(--secondary)",
-        main: "var(--main)",
-        background: "var(--background)",
-        header: "var(--header)",
-        accent: "var(--accent)",
+        primary: 'var(--primary)',
+        secondary: 'var(--secondary)',
+        main: 'var(--main)',
+        background: 'var(--background)',
+        header: 'var(--header)',
+        accent: 'var(--accent)',
       },
       boxShadow: {
-        'navbar': 'rgba(120, 126, 154, 0.81) 0px -6px 44px -17px',
-      }
+        navbar: 'rgba(120, 126, 154, 0.81) 0px -6px 44px -17px',
+      },
     },
     fontWeight: {
       hairline: 100,
