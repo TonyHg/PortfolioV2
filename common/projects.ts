@@ -1,6 +1,7 @@
 import { Color } from './colors'
 import { Project } from './types'
 
+import tukaImg from '../public/img/tuka.png'
 import tripnjoyImg from '../public/img/tripnjoy.png'
 import clonestagramImg from '../public/img/clonestagram.png'
 import pingImg from '../public/img/ping.png'
@@ -50,7 +51,7 @@ export const mainProjects: Project[] = [
       technologies.Tailwind,
       technologies.Auth0,
     ],
-    image: tripnjoyImg,
+    image: tukaImg,
     color: Color.darkGreen,
   },
   {
