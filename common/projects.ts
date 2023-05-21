@@ -13,6 +13,7 @@ import rgImg from '../public/img/rg.png'
 import upImg from '../public/img/up.png'
 import timImg from '../public/img/tim.png'
 
+import qwikImg from '../public/img/qwik.png'
 import a11yImg from '../public/img/a11y.png'
 import threeJsImg from '../public/img/threejs.png'
 import kosImg from '../public/img/kos.png'
@@ -192,6 +193,16 @@ Fancier features like Custom Themes and Shortcuts. ',
 ]
 
 export const otherProjects: Project[] = [
+  {
+    title: 'Qwik Todo',
+    date: 'March 2023',
+    description:
+      'Simple todo list app built with Qwik.',
+    technologies: [technologies.Qwik],
+    image: qwikImg,
+    url: 'https://qwik-todo.vercel.app/',
+    github: 'https://github.com/TonyHg/qwik-todo',
+  },
   {
     title: 'Nile - The accessibility e-commerce',
     date: 'December 2022 - January 2022',

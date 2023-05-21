@@ -60,4 +60,5 @@ export const technologies = {
   SvelteKit: { title: 'SvelteKit', color: '#FF3E00' },
   A11Y: { title: 'A11Y', color: '#3f60e9' },
   Auth0: { title: 'Auth0', color: '#4b4b4b' },
+  Qwik: { title: 'Qwik', color: '#0983e0' },
 }
